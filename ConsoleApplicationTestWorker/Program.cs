@@ -15,7 +15,7 @@ namespace ConsoleApplicationTestWorker
             for (int i = 0; ; i++)
             {
                 var client = new HttpClient();
-                var response = client.GetAsync(String.Format("http://davidebbo.com/abcd/{0}", i)).Result;
+                var response = client.GetAsync(String.Format("http://davidebbo.com/qqq/{0}", i)).Result;
                 Console.WriteLine(response.StatusCode);
                 Thread.Sleep(5000);
             }
